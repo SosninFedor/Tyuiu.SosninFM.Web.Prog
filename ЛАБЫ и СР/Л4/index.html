@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная - Суши-бар</title>
+    <style>
+        /* Стили для панели навигации (строго из PDF) */
+        nav {
+            float: left;
+            width: 150px;
+            margin: 10px 30px 10px 0px;
+            padding: 10px;
+            border: black medium double;
+            border-radius: 10px;
+        }
+        nav div {
+            font-size: 23pt;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        /* Чтобы основной контент не заезжал под навигацию */
+        main {
+            margin-left: 200px;
+        }
+        /* Небольшое оформление для ссылок (необязательно, но аккуратно) */
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Для графической ссылки убираем рамку у картинки */
+        img {
+            border: none;
+        }
+    </style>
+</head>
+<body bgcolor="Orchid" link="MediumBlue" vlink="Green3" alink="DeepPink">
+    <!-- Заголовок -->
+    <header>
+        <h1>Добро пожаловать в наш суши-бар!</h1>
+    </header>
+
+    <!-- Панель навигации (точно по PDF) -->
+    <nav>
+        <div><a href="#">Главная</a></div>
+        <div><a href="catalogosn.html">Горячие блюда</a></div>
+        <div><a href="catalogushi.html">Суши</a></div>
+        <div><a href="catalogroll.html">Роллы</a></div>
+        <div><a href="pricelist.html" target="_blank">Прайс-лист</a></div>
+    </nav>
+
+    <!-- Основная часть -->
+    <main>
+        <p>Посмотрите наш <a href="pricelist.html" target="_blank">прайс-лист</a>.</p>
+        <p>Также вы можете <a href="Materials.zip" download>скачать наш прайс-лист</a>.</p>
+        <p>Для заказа столиков пишите: <a href="mailto:panchenkoib@tyuiu.ru">Заказ столиков</a></p>
+
+        <!-- Графическая ссылка на прайс-лист -->
+        <p>Графическая ссылка на прайс-лист:</p>
+        <a href="pricelist.html">
+            <img src="images/Напиток2.jpg" alt="Напиток" width="150">
+        </a>
+
+        <!-- Пустая ссылка (заглушка) -->
+        <p>Пустая ссылка (заглушка): <a href="#">скоро будет</a></p>
+
+        <!-- Добавленные ссылки на внешние сайты (из PDF) -->
+        <p>Узнайте больше о лошадях на сайте <a href="https://kohuku.ru/" target="_blank">kohuku.ru</a>.</p>
+        <p>Наш университет: <a href="https://www.tyuiu.ru/" target="_blank">ТИУ</a>.</p>
+    </main>
+
+    <!-- Нижнее меню (как в PDF, но можно оставить для удобства) -->
+    <hr>
+    <p style="text-align: center;">
+        <a href="#">Главная</a> |
+        <a href="catalogosn.html">Горячие блюда</a> |
+        <a href="catalogushi.html">Суши</a> |
+        <a href="catalogroll.html">Роллы</a>
+    </p>
+
+    <!-- Контакты (по желанию, в PDF не обязательны, но можно оставить) -->
+    <address>
+        Наш адрес: Ул. Мельникайте, 70.<br>
+        Email: <a href="mailto:panchenkoib@tyuiu.ru">panchenkoib@tyuiu.ru</a>
+    </address>
+</body>
+</html>
