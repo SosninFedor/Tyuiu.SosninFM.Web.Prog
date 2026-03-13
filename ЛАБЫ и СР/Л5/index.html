@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная - Суши-бар "Японский дворик"</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Общие стили в розовой гамме */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfddb;  /* Светло-желтый фон */
+            margin: 25px;
+            color: #333;
+        }
+        
+        h1 {
+            color: #FF1493;
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(255,20,147,0.2);
+        }
+        
+        h2 {
+            color: #C71585;
+            text-align: center;
+        }
+        
+        /* Панель навигации */
+        nav {
+            float: left;
+            width: 200px;
+            margin: 10px 30px 10px 0px;
+            padding: 15px;
+            border: 3px solid #FF1493;
+            border-radius: 15px;
+            background-color: #fff8e7;
+            box-shadow: 0 4px 8px rgba(255,20,147,0.2);
+        }
+        
+        nav div {
+            font-size: 18pt;
+            margin: 10px 0;
+            padding: 5px;
+            border-bottom: 1px dashed #FFB6C1;
+        }
+        
+        nav div:last-child {
+            border-bottom: none;
+        }
+        
+        nav a {
+            color: #C71585;
+            text-decoration: none;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            color: #FF1493;
+            transform: translateX(10px);
+            background-color: #FFE4E1;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+        
+        nav a[href="#"] {
+            color: #FF1493;
+            font-weight: bold;
+            background-color: #FFE4E1;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        
+        /* Основной контент */
+        main {
+            margin-left: 240px;
+            padding: 20px;
+            background-color: #fff8e7;
+            border-radius: 15px;
+            border: 2px solid #FFB6C1;
+            min-height: 500px;
+        }
+        
+        /* Стили для ссылок */
+        a {
+            color: #C71585;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        a:hover {
+            color: #FF1493;
+            text-decoration: underline;
+        }
+        
+        /* Специальные стили для разных ссылок */
+        .price-link {
+            background-color: #FF1493;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+        
+        .price-link:hover {
+            background-color: #C71585;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .download-link {
+            background-color: #FFB6C1;
+            color: #8B0000;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+        
+        .email-link {
+            color: #FF1493;
+            border-bottom: 2px dotted #FF1493;
+        }
+        
+        /* Графическая ссылка */
+        .image-link {
+            display: inline-block;
+            border: 3px solid #FF1493;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        
+        .image-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(255,20,147,0.4);
+        }
+        
+        .image-link img {
+            display: block;
+            width: 150px;
+            height: auto;
+        }
+        
+        /* Нижнее меню */
+        .bottom-menu {
+            clear: both;
+            text-align: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #FFE4E1;
+            border-radius: 10px;
+            border: 2px solid #FFB6C1;
+        }
+        
+        .bottom-menu a {
+            margin: 0 15px;
+            padding: 5px 15px;
+            border-right: 2px solid #FF1493;
+        }
+        
+        .bottom-menu a:last-child {
+            border-right: none;
+        }
+        
+        /* Контакты */
+        address {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #FFE4E1;
+            border-radius: 10px;
+            border: 2px solid #FF1493;
+            color: #C71585;
+        }
+        
+        /* Горизонтальные линии */
+        hr {
+            border: 2px solid #FF1493;
+            width: 80%;
+            margin: 20px auto;
+        }
+        
+        /* Бегущая строка */
+        marquee {
+            background-color: DeepPink;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+
+<div align="center">
+    <marquee loop="infinite" behavior="scroll" bgcolor="DeepPink" direction="left" height="60" width="100%">
+        🍣 ДОБРО ПОЖАЛОВАТЬ В СУШИ-БАР "ЯПОНСКИЙ ДВОРИК" 🍣
+    </marquee>
+</div>
+
+
+<header>
+    <h1><font face="Times New Roman" size="7" color="#FF1493">СУШИ-БАР "ЯПОНСКИЙ ДВОРИК"</font></h1>
+</header>
+
+
+<nav>
+    <div><a href="#">🏠 Главная</a></div>
+    <div><a href="catalogosn.html">🍲 Горячие блюда</a></div>
+    <div><a href="catalogushi.html">🍣 Суши</a></div>
+    <div><a href="catalogroll.html">🍥 Роллы</a></div>
+    <div><a href="pricelist.html" target="_blank">💰 Прайс-лист</a></div>
+    <div><a href="order.html">📞 Заказ столиков</a></div>
+    <div><a href="takeaway.html">🥡 Заказ на вынос</a></div>
+    <div><a href="zakony.html">📚 Законы Мёрфи</a></div>
+    <div><a href="Соснин_tea.html">🍵 Вкусный чай</a></div>
+</nav>
+
+
+<main>
+    <h2>🍱 Добро пожаловать!</h2>
+    
+    <p>Посмотрите наш <a href="pricelist.html" target="_blank" class="price-link">💰 прайс-лист</a>.</p>
+    
+    <p>Также вы можете <a href="Materials.zip" download class="download-link">📥 скачать наш прайс-лист</a>.</p>
+    
+    <p>Для заказа столиков пишите: <a href="mailto:panchenkoib@tyuiu.ru" class="email-link">✉️ Заказ столиков</a></p>
+
+  
+    <p>🍸 Графическая ссылка на прайс-лист:</p>
+    <a href="pricelist.html" class="image-link">
+        <img src="images/Напиток2.jpg" alt="Напиток" width="150">
+    </a>
+
+
+    <p>Пустая ссылка (заглушка): <a href="#" style="color: #999; text-decoration: line-through;">скоро будет</a></p>
+
+
+    <p>Узнайте больше о лошадях на сайте <a href="https://kohuku.ru/" target="_blank" style="color: #8B4513;">kohuku.ru</a> 🌿</p>
+    
+    <p>Наш университет: <a href="https://www.tyuiu.ru/" target="_blank" style="color: #8B0000; font-weight: bold;">ТИУ</a> 🎓</p>
+
+    <div style="background-color: #FFE4E1; padding: 15px; border-radius: 10px; margin-top: 20px;">
+        <h3>🌟 О нашем ресторане</h3>
+        <p>Мы предлагаем самые вкусные блюда японской кухни. Свежие продукты, оригинальные рецепты и уютная атмосфера ждут вас!</p>
+        <p><b>Часы работы:</b> Ежедневно с 11:00 до 23:00</p>
+        <p><b>Адрес:</b> Ул. Мельникайте, 70</p>
+    </div>
+</main>
+
+
+<div class="bottom-menu">
+    <a href="#">🏠 Главная</a>
+    <a href="catalogosn.html">🍲 Горячие блюда</a>
+    <a href="catalogushi.html">🍣 Суши</a>
+    <a href="catalogroll.html">🍥 Роллы</a>
+    <a href="order.html">📞 Заказ столиков</a>
+    <a href="takeaway.html">🥡 Заказ на вынос</a>
+</div>
+
+
+<hr>
+
+
+<address>
+    <b>Соснин Фёдор Михайлович АСОиУб 24-1</b><br>
+    📧 <a href="mailto:sosninfedor@gmail.com">sosninfedor@gmail.com</a><br>
+    📞 +7 (999) 123-45-67
+</address>
+
+
+
+</body>
+</html>

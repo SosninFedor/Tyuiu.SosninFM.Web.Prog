@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Red Horizon - Концерты</title>
+    <link rel="stylesheet" href="style-band.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>RED HORIZON</h1>
+    <p>ближайшие концерты</p>
+</div>
+
+<div class="nav">
+    <a href="band.html">О группе</a>
+    <a href="discography.html">Дискография</a>
+    <a href="tour.html">Концерты</a>
+</div>
+
+<div class="content">
+    <h2>Ближайшие выступления</h2>
+    
+    <table class="tour-table">
+        <tr>
+            <th>Дата</th>
+            <th>Город</th>
+            <th>Клуб</th>
+            <th>Билеты</th>
+        </tr>
+        <tr>
+            <td>15.04.2025</td>
+            <td>Москва</td>
+            <td>Клуб 1930</td>
+            <td>1200 руб.</td>
+        </tr>
+        <tr>
+            <td>22.04.2025</td>
+            <td>Санкт-Петербург</td>
+            <td>MOD Club</td>
+            <td>1100 руб.</td>
+        </tr>
+        <tr>
+            <td>05.05.2025</td>
+            <td>Екатеринбург</td>
+            <td>Дом печати</td>
+            <td>1000 руб.</td>
+        </tr>
+    </table>
+    
+    <div class="concert-form">
+        <h3>Заказ билетов</h3>
+        
+        <form action="mailto:tickets@redhorizon.ru" method="post" enctype="text/plain">
+            
+            <p>
+                <label for="city">Выберите город:</label>
+                <select name="city" id="city">
+                    <option value="msk">Москва</option>
+                    <option value="spb">Санкт-Петербург</option>
+                    <option value="ekb">Екатеринбург</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name" id="name" required>
+            </p>
+            
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            
+            <p>
+                <label for="phone">Телефон:</label>
+                <input type="text" name="phone" id="phone" required placeholder="+7 XXX XXX-XX-XX">
+            </p>
+            
+            <p>
+                <label>Количество билетов:</label>
+                <input type="number" name="tickets" min="1" max="5" value="1">
+            </p>
+            
+            <p>
+                <label>Тип билета:</label><br>
+                <input type="radio" name="type" value="stand" checked> Стандарт<br>
+                <input type="radio" name="type" value="vip"> VIP (вход без очереди)<br>
+            </p>
+            
+            <p>
+                <input type="checkbox" name="agree" required> Я согласен с условиями
+            </p>
+            
+            <p>
+                <button type="submit">Заказать билеты</button>
+                <button type="reset">Очистить</button>
+            </p>
+        </form>
+        
+        <div class="concert-img">
+            <img src="band-images/band-concert.jpg" alt="Концерт Red Horizon">
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2025 Red Horizon. Все права защищены.
+</div>
+
+</body>
+</html>
